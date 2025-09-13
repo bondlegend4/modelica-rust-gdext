@@ -180,7 +180,7 @@ runs:
       run: |
         cd itest/godot
         echo "OUTCOME=itest" >> $GITHUB_ENV
-        $GODOT4_BIN --headless -- --disallow-focus ${{ inputs.godot-args }} 2>&1 \
+        $GODOT4_BIN --headless -- ${{ inputs.godot-args }} 2>&1 \
         | tee "${{ runner.temp }}/log.txt" \
         | tee >(grep -E "SCRIPT ERROR:|Can't open dynamic library" -q && {
           printf "\n::error::godot-itest: unrecoverable Godot error, abort...\n";
