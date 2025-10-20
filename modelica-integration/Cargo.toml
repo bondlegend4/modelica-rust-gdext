@@ -1,0 +1,18 @@
+[package]
+name = "godot-modelica-integration"
+version = "0.1.0"
+edition = "2021"
+description = "Generic Godot extension for Modelica physics simulations"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+godot = { path = "../godot" }
+modelica-rust-ffi = { path = "../modelica-rust-ffi" }
+
+# Remove space-modelica-components dependency!
+# Users provide their own models
+
+[build-dependencies]
+godot = { path = "../godot" }

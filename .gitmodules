@@ -1,3 +1,7 @@
 [submodule "modelica-rust-ffi"]
 	path = modelica-rust-ffi
 	url = https://github.com/bondlegend4/modelica-rust-ffi.git
+	branch = generic
+[submodule "space-colony-modelica-core"]
+	path = space-colony-modelica-core
+	url = https://github.com/bondlegend4/space-colony-modelica-core.git
